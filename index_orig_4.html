@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+   <link rel="stylesheet" href="./css/estilos2.css">
+</head>
+
+<body>
+  
+   <p>  Formulario de Prueba </p>
+  
+  <form name="datos" action="formulario.php" method="post">
+    <fieldset>
+      <p>
+        <legend>Datos Personales</legend>
+        Nombre:
+        <input type="text" id="nombre" name="nombren" pattern="[az]{1,15}" required><br>
+        Dirección:
+        <input type="text" id="direccion" name="direccionn" required><br>
+        e-mail:
+        <input type="email" id="email" name="emailn" required><br>
+        Telefono:
+        <input type="tel" id="telefono" name="telefonon" pattern="[0-9]{10}}"><br>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <p>
+        <legend>datos del Producto</legend>
+        Producto:
+        <select id="producto" name="producto">
+          <option value="opcion1">Opción 1</option>
+          <option value="opcion2">Opción 2</option>
+          <option value="opcion3">Opción 3</option>
+        </select>
+        Cantidad:
+        <input type="number" id="cantidad" name="cantidad" min="1" max="10"><br>
+      </p>
+    </fieldset>
+    <input type="submit" value="Enviar">
+  </form>
+  <div>
+    <center>
+      <a href="index.html"><img class="imgcen" src="./imagenes/regresa.gif" alt="no se muestra"><br>Página principal</a>
+    </center>
+    </div>
+</body>
+
+</html>
